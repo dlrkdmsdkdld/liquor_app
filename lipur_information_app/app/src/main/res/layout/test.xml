@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/colorDivision"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/loyal_salute_21"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로얄 살루트 21"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorDivision"
+                android:orientation="horizontal"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/loyal_salute_blande"
+                    />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로얄 살루트 블랜디"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorDivision"
+                android:orientation="horizontal"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/loyal_salute_32" />
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="브랜디"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@color/colorDivision"
+                android:orientation="horizontal"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"></LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/colorDivision"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"></LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

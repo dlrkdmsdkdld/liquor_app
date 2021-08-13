@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loyal_salute_21_information"
+    >
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:id="@+id/btn_back_loyal_salute_21"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로얄 살루트 21년"
+        android:textSize="20dp"
+
+        />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/loyal_salute_21"
+        android:layout_below="@+id/title"
+        android:id="@+id/baseimg"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/baseimg"
+        android:text="1953년 위스키 제조업체 시바스 브라더스가 엘리자베스 2세 영국 여왕의 대관식을 위해 특별제작한 위스키이다 당시 대관식에서 착용한 왕관에 박힌 보석의 색상을 따라 3가지 색을 병에 반영했다"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="가격 : 14만원 ~ 21만원"
+        android:layout_below="@+id/userRating"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/baseimg"
+    android:id="@+id/userRating"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사용자들의 평가 :"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userRating"
+
+        android:layout_toEndOf="@+id/userRating"
+        android:layout_toRightOf="@+id/userRating" />
+</LinearLayout>
+
+</RelativeLayout>
