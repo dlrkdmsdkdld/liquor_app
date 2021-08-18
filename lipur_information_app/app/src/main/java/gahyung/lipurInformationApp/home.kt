@@ -22,9 +22,9 @@ import java.util.*
 class home : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         var view = inflater.inflate(R.layout.activity_home,container,false)
+        view.layout_wisky.visibility = View.GONE
 
         //보드카 관련코드
-
         view?.vodka_btn?.setOnClickListener {
             activity?.finish() //현재 액티비티 종료
 
@@ -34,12 +34,12 @@ class home : Fragment() {
         //보드카 관련코드
         //위스키 관련 코드
         view?.btn_wisky?.setOnClickListener {//위스키 버튼 누르면 위스키 목록사진이 보임
-            view.first_layout.visibility = View.INVISIBLE
+            view.first_layout.visibility = View.GONE
             view.layout_wisky.visibility = View.VISIBLE
         }
         view?.btn_wiskyBack?.setOnClickListener {//back 버튼 누르면 처음 레이아웃이 보임
             view.first_layout.visibility = View.VISIBLE
-            view.layout_wisky.visibility = View.INVISIBLE
+            view.layout_wisky.visibility = View.GONE
 
         }
         view?.btn_loyal_salute_21?.setOnClickListener {

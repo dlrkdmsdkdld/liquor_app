@@ -7,6 +7,17 @@
     tools:context=".account"
 android:gravity="center"
     android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:visibility="visible"
+        android:gravity="center"
+        android:id="@+id/login_Layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <ImageView
         android:layout_width="200dp"
@@ -44,4 +55,39 @@ android:gravity="center"
         android:id="@+id/btn_sign_facebook"
         android:textColor="@color/white"
         />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/Logout_Layout"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account"
+            android:layout_margin="20dp"
+            android:id="@+id/img"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img"
+            android:layout_toRightOf="@+id/img"
+            android:textSize="25dp"
+            android:id="@+id/te"
+            android:text="email"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/colorDivision"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:layout_below="@+id/te"/>
+    </RelativeLayout>
+    </FrameLayout>
 </LinearLayout>

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Lipur_information_app">
-        <activity android:name=".loyal_salute_21_information"></activity>
+        <activity android:name=".user_account"></activity>
+        <activity android:name=".loyal_salute_21_information" />
         <activity android:name=".vodka" />
         <activity android:name=".MainActivity">
             <intent-filter>
